@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- To Create a folder "menu" inside "res" folder and put this main.xml inside -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menuRight"
+        android:orderInCategory="100"
+        android:title="settings"
+        android:icon="@drawable/drawer_ic_hamburger"
+        app:showAsAction="always" />
+</menu>

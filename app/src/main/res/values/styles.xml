@@ -1,0 +1,72 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/iconblue</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">#c5c5c5</item>
+
+
+        <item name="colorControlNormal">#c5c5c5</item>
+        <item name="colorControlActivated">@color/deepskyblue2</item>
+        <item name="colorControlHighlight">@color/deepskyblue2</item>
+    </style>
+
+    <style name="CustomCheckBox">
+        <item name="colorAccent">@color/black</item>
+    </style>
+
+    <style name="Space">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">5dp</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1.2dp</item>
+        <item name="android:background">@android:color/black</item>
+    </style>
+
+    <style name="Divider2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">@android:color/black</item>
+    </style>
+
+    <style name="Divider3">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">@color/iconblue</item>
+    </style>
+
+    <style name="CustomTextInputLayout">
+        <item name="android:textColor">@color/deepskyblue2</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="MyDatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <!-- this is new -->
+        <item name="colorAccent">@color/iconblue</item>     <!-- Controls Selector -->
+
+        <item name="android:datePickerStyle">@style/MyDatePickerStyle</item>
+        <item name="android:colorAccent">@color/iconblue</item>
+    </style>
+
+    <style name="MyDatePickerStyle" parent="@android:style/Widget.Material.Light.DatePicker">
+        <item name="android:headerBackground">@color/iconblue</item>
+        <item name="android:calendarTextColor">@color/iconblue</item>
+        <item name="android:dayOfWeekBackground">@color/iconblue</item>
+        <item name="android:yearListSelectorColor">@color/iconblue</item>
+        <item name="android:datePickerMode">calendar</item>
+        <item name="android:minDate">01/01/2000</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splashscreen</item>
+    </style>
+
+</resources>

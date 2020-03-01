@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_vehicle__commander__review"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.portal.Vehicle_Commander_Review">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="Please review the information before submitting."
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/list_view_borderblack"
+                android:paddingBottom="2dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp">
+
+                <TextView
+                    android:id="@+id/VehCommName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Countersigning Officer:"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/DateVehComm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/textView37"
+                android:layout_toRightOf="@+id/textView37"
+                android:text="Date of Review: "
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/TimeVehComm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/textView38"
+                android:layout_toRightOf="@+id/textView38"
+                android:text="Time of Review: "
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/JourneyTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/textView76"
+                android:layout_toRightOf="@+id/textView76"
+                android:text="Destination:" />
+
+            <TextView
+                android:id="@+id/JourneyFrom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/textView77"
+                android:layout_toRightOf="@+id/textView77"
+                android:text="Disembarkation Point:" />
+
+            <TextView
+                android:id="@+id/SubmitMTRAC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/textView46"
+                android:layout_toRightOf="@+id/textView46"
+                android:text="Driver:" />
+
+            <TextView
+                android:id="@+id/DateDriver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/textView79"
+                android:layout_toRightOf="@+id/textView79"
+                android:text="Date of MT-RAC: " />
+
+            <TextView
+                android:id="@+id/TimeDriver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/textView78"
+                android:layout_toRightOf="@+id/textView78"
+                android:text="Time of MT-RAC: " />
+
+            <TextView
+                android:id="@+id/VehicleNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/textView75"
+                android:layout_toRightOf="@+id/textView75"
+                android:text="Vehicle Number: " />
+
+            <View style="@style/Divider" />
+
+            <TextView
+                android:id="@+id/Experience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/ExperienceText"
+                android:layout_toRightOf="@+id/ExperienceText"
+                android:text="Driving Experience: " />
+
+            <TextView
+                android:id="@+id/textView73"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Have you ever been trained and got familiarised in the vehicle that you will be driving/riding?"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TrainedandFamiliarised"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/VehicleType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/VehicleTypeText"
+                android:layout_toRightOf="@+id/VehicleTypeText"
+                android:text="Vehicle Type: " />
+
+            <TextView
+                android:id="@+id/LengthofRest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/textView71"
+                android:layout_toRightOf="@+id/textView71"
+                android:text="Fatigue/Length of Rest: " />
+
+            <TextView
+                android:id="@+id/MyHealth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/textView70"
+                android:layout_toRightOf="@+id/textView70"
+                android:text="My Health: " />
+
+            <TextView
+                android:id="@+id/Weather"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/textView69"
+                android:layout_toRightOf="@+id/textView69"
+                android:text="Weather: " />
+
+            <TextView
+                android:id="@+id/RouteFamiliarity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/textView68"
+                android:layout_toRightOf="@+id/textView68"
+                android:text="Route Familiarity: " />
+
+            <TextView
+                android:id="@+id/PurposeofMission"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/textView67"
+                android:layout_toRightOf="@+id/textView67"
+                android:text="Purpose of Mission: " />
+
+            <TextView
+                android:id="@+id/textView66"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Is a Vehicle Commander Present?"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/VehicleCommanderPresent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/VehicleMotorcycleServiceability"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/textView65"
+                android:layout_toRightOf="@+id/textView65"
+                android:text="Vehicle/Motorcycle Serviceability: " />
+
+            <TextView
+                android:id="@+id/textView64"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Overall Risk Level: "
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/list_view_border"
+                android:paddingBottom="1.2dp"
+                android:paddingLeft="1.2dp"
+                android:paddingRight="1.2dp"
+                android:paddingTop="1.2dp">
+
+                <TextView
+                    android:id="@+id/OverallRiskLevel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="60sp" />
+            </RelativeLayout>
+
+            <View
+                style="@style/Space"
+                android:layout_width="wrap_content"
+                android:layout_height="3dp" />
+
+            <TextView
+                android:id="@+id/DriverTaskCompleted"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="Tasks driver have completed:"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/DriverComplete1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Brief and ensure troops secure their seat belts before movement of vehicle" />
+
+            <TextView
+                android:id="@+id/DriverComplete2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Check and ensure seating or loading capacity of the vehicle is not exceeded" />
+
+            <TextView
+                android:id="@+id/DriverComplete3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. Check and ensure safety straps in place and tailboard of vehicle is closed" />
+
+            <TextView
+                android:id="@+id/DriverComplete4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. Brief troops on no smoking/sleeping on the vehicle before movement of vehicle" />
+
+            <TextView
+                android:id="@+id/DriverComplete5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5. Brief troops on no smoking/sleeping on the vehicle before movement of vehicle" />
+
+            <TextView
+                android:id="@+id/DriverComplete6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6. If involved in an accident, to contact parent unit, POLICE and SAF PROVOST UNIT to inform about accident" />
+
+            <TextView
+                android:id="@+id/DriverComplete7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7. Ensure that MT RAC form is completed and duly counter-signed" />
+
+            <View
+                android:id="@+id/DriverTaskCompletedLine"
+                style="@style/Divider" />
+
+            <TextView
+                android:id="@+id/DriverTaskIncomplete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="Please ensure that the driver has completed the tasks in red:"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/DriverIncomplete1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/black"
+                android:checked="false"
+                android:text="Brief and ensure troops secure their seat belts before movement of vehicle"
+                android:textColor="@color/red" />
+
+            <CheckBox
+                android:id="@+id/DriverIncomplete2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/black"
+                android:checked="false"
+                android:text="Check and ensure seating or loading capacity of the vehicle is not exceeded"
+                android:textColor="@color/red" />
+
+            <CheckBox
+                android:id="@+id/DriverIncomplete3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/black"
+                android:checked="false"
+                android:text="Check and ensure safety straps in place and tailboard of vehicle is closed"
+                android:textColor="@color/red" />
+
+            <CheckBox
+                android:id="@+id/DriverIncomplete4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/black"
+                android:checked="false"
+                android:text="Brief troops on no smoking/sleeping on the vehicle before movement of vehicle"
+                android:textColor="@color/red" />
+
+            <CheckBox
+                android:id="@+id/DriverIncomplete5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/black"
+                android:checked="false"
+                android:text="Brief troops on no smoking/sleeping on the vehicle before movement of vehicle"
+                android:textColor="@color/red" />
+
+            <CheckBox
+                android:id="@+id/DriverIncomplete6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/black"
+                android:checked="false"
+                android:text="If involved in an accident, to contact parent unit, POLICE and SAF PROVOST UNIT to inform about accident"
+                android:textColor="@color/red" />
+
+            <CheckBox
+                android:id="@+id/DriverIncomplete7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/black"
+                android:checked="false"
+                android:text="Ensure that MT RAC form is completed and duly counter-signed"
+                android:textColor="@color/red" />
+
+            <View
+                android:id="@+id/DriverTaskIncompleteLine"
+                style="@style/Divider" />
+
+            <TextView
+                android:id="@+id/textView82"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="Vehicle Commanders are responsible for the troops and cargo transported. You are to perform the following actions and briefing. (Please check the tasks completed.)"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/VehComm1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/black"
+                android:checked="false"
+                android:text="Ensure that the driver is licensed to operate the vehicle"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:id="@+id/VehComm2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/black"
+                android:checked="false"
+                android:text="Ensure that the driver does not exceed the vehicle or road speed limit"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:id="@+id/VehComm3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/black"
+                android:checked="false"
+                android:text="Warn the driver of any obstacles, hazards or dangers"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:id="@+id/VehComm4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/black"
+                android:checked="false"
+                android:text="Guide the diver during reversing or movement towards congested or narrow spaces"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:id="@+id/VehComm5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/black"
+                android:checked="false"
+                android:text="Brief and ensure troops secure their seat belts before movement of vehicle"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:id="@+id/VehComm6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/black"
+                android:checked="false"
+                android:text="Check and ensure seating or loading capacity of the vehicle is not exceeded"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:id="@+id/VehComm7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/black"
+                android:checked="false"
+                android:text="Check and ensure safety straps in place and tailboard of vehicle is closed"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:id="@+id/VehComm8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/black"
+                android:checked="false"
+                android:text="Brief troops on no smoking/sleeping on the vehicle before movement of vehicle"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:id="@+id/VehComm9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/black"
+                android:checked="false"
+                android:text="Secure load before movement of vehicle"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:id="@+id/VehComm10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/black"
+                android:checked="false"
+                android:text="If involved in an accident, to contact parent unit, POLICE and SAF PROVOST UNIT to inform about accident"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:id="@+id/VehComm11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/black"
+                android:checked="false"
+                android:text="Ensure that MT RAC form is completed and duly counter-signed"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:id="@+id/VehComm12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/black"
+                android:checked="false"
+                android:text="Ensure that driver has completed the checks listed above"
+                android:textColor="@color/black" />
+
+            <View style="@style/Divider" />
+
+            <CheckBox
+                android:id="@+id/ConfirmationofChecks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/black"
+                android:checked="false"
+                android:text="As the vehicle commander, I have conducted the necessary checks and briefs."
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/Submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/iconblue"
+                android:text="Approve MTRAC"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/Reject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/red2"
+                android:text="Reject MTRAC"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="10dp">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Approve As:" />
+
+    <Button
+        android:id="@+id/Countersigning_Officer"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Vehicle_Commander"
+        android:backgroundTint="@color/iconblue"
+        android:text="Countersigning Officer"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/Vehicle_Commander"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SubmitMTRAC"
+        android:layout_alignStart="@+id/SubmitMTRAC"
+        android:layout_below="@+id/SubmitMTRAC"
+        android:backgroundTint="@color/iconblue"
+        android:text="Vehicle Commander"
+        android:textColor="@color/white" />
+
+</LinearLayout>

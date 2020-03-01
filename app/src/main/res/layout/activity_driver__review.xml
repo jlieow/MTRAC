@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_driver__review"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.portal.Driver_Review">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="Please review the information before submitting."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:textSize="14sp" />
+
+            <View
+                style="@style/Divider"
+                android:layout_width="wrap_content" />
+
+            <TextView
+                android:id="@+id/DateDriver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Date of MT-RAC: "
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/TimeDriver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Time of MT-RAC: "
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/CountersigningOfficerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Countersigning Officer:"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/VehCommName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Vehicle Commander:"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/JourneyFrom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Disembarkation Point:"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/JourneyTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Destination:"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/VehicleNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Vehicle Number: "
+                android:textSize="14sp" />
+
+            <View style="@style/Divider" />
+
+            <TextView
+                android:id="@+id/Experience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Driving Experience: "
+                android:textSize="14sp" />
+
+            <TextView
+                android:text="Have you ever been trained and familiarised in the vehicle that you will be driving/riding?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView26"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/TrainedandFamiliarised"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/VehicleType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Vehicle Type: "
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/LengthofRest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Fatigue/Length of Rest: "
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/MyHealth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="My Health: "
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/Weather"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Weather: "
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/RouteFamiliarity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Route Familiarity: "
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/PurposeofMission"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Purpose of Mission: "
+                android:textSize="14sp" />
+
+            <TextView
+                android:text="Is a Vehicle Commander Present?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView35"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/VehicleCommanderPresent"
+                android:layout_weight="1"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/VehicleMotorcycleServiceability"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Vehicle/Motorcycle Serviceability: "
+                android:textSize="14sp" />
+
+            <TextView
+                android:text="Overall Risk Level:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView33"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="1.2dp"
+                android:paddingLeft="1.2dp"
+                android:paddingRight="1.2dp"
+                android:paddingTop="1.2dp"
+                android:background="@drawable/list_view_border">
+
+                <TextView
+                    android:id="@+id/OverallRiskLevel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="60sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:text="Drivers are responsible for the troops and cargo transported. You are to perform the following actions and briefing. (Please check the tasks completed.)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:text="Brief and ensure troops secure their seat belts before movement of vehicle."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Driver1"
+                android:textColor="@color/black"
+                android:buttonTint="@color/black"
+                android:checked="false" />
+
+            <CheckBox
+                android:text="Check and ensure seating or loading capacity of the vehicle is not exceeded."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Driver2"
+                android:textColor="@color/black"
+                android:buttonTint="@color/black"
+                android:checked="false" />
+
+            <CheckBox
+                android:text="Check and ensure safety straps in place and tailboard of vehicle is closed."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Driver3"
+                android:textColor="@color/black"
+                android:buttonTint="@color/black"
+                android:checked="false" />
+
+            <CheckBox
+                android:text="Brief troops on no smoking/sleeping on the vehicle before movement of vehicle."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Driver4"
+                android:textColor="@color/black"
+                android:buttonTint="@color/black"
+                android:checked="false" />
+
+            <CheckBox
+                android:text="Secure load before movement of vehicle."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Driver5"
+                android:textColor="@color/black"
+                android:buttonTint="@color/black"
+                android:checked="false" />
+
+            <CheckBox
+                android:text="If involved in an accident, to contact parent unit, POLICE and SAF PROVOST UNIT to inform about accident."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Driver6"
+                android:textColor="@color/black"
+                android:buttonTint="@color/black"
+                android:checked="false" />
+
+            <CheckBox
+                android:text="Ensure that MT RAC form is completed and duly counter-signed."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Driver7"
+                android:textColor="@color/black"
+                android:buttonTint="@color/black"
+                android:checked="false" />
+
+            <Button
+                android:id="@+id/Submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:backgroundTint="@color/iconblue"
+                android:text="Submit MT-RAC"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

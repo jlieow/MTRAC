@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- xml file to configure the list layout for search button-->
+<!-- by cs -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_view_border"
+    android:orientation="vertical"
+    android:paddingBottom="0dp"
+    android:paddingTop="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="2dp">
+
+            <TextView
+                android:id="@+id/FormStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FormStatus"
+                android:paddingLeft="2dp"
+                android:background="@color/greybackground"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingRight="-2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="0dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="-5dp"
+                android:paddingTop="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/list_view_border"
+                    android:orientation="horizontal"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:paddingTop="2dp">
+
+                    <TextView
+                        android:id="@+id/TextView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:paddingTop="4dp"
+                        android:text=" Driver:"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:background="@color/greybackground"/>
+
+                    <TextView
+                        android:id="@+id/SubmitMTRAC"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:paddingTop="4dp"
+                        android:text="driver"
+                        android:textSize="14sp"
+                        android:background="@color/greybackground"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingBottom="2dp">
+
+                    <TextView
+                        android:id="@+id/TextView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:paddingTop="4dp"
+                        android:text=" Vehicle Number:"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:background="@color/greybackground"/>
+
+                    <TextView
+                        android:id="@+id/VehicleNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:paddingTop="4dp"
+                        android:text="AAA"
+                        android:textSize="14sp"
+                        android:background="@color/greybackground"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/RiskLayout"
+                android:layout_width="142dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/list_view_border"
+                android:paddingBottom="2dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp">
+
+                <LinearLayout
+                    android:id="@+id/risk_linear"
+                    android:layout_width="142dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/RiskLevelLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Risk Level" />
+
+                    <TextView
+                        android:id="@+id/RiskLevel"
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:layout_toRightOf="@+id/SubmitMTRAC"
+                        android:gravity="center"
+                        android:text="NO MOVE"
+                        android:textSize="28sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/IDform"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="IDform"
+            android:background="@color/greybackground"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

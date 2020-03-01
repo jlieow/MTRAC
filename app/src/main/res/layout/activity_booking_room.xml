@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_booking_room"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.example.portal.BookingRoom">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="Previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Previous"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/iconblue"
+                android:layout_above="@+id/Previous"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <TextView
+                    android:text="Area:    "
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Area"
+                    android:layout_gravity="center"
+                    android:layout_width="50dp" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:id="@+id/AreaSpinner"
+                    android:popupBackground="@color/white"
+                    android:textColor="@color/black"
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Room:"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Room"
+                    android:layout_gravity="center"
+                    android:layout_width="50dp" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:id="@+id/RoomSpinner"
+                    android:popupBackground="@color/white"
+                    android:textColor="@color/black"
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:layout_weight="1"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:text="Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/DateDriver"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:backgroundTint="@color/iconblue"
+                    android:layout_above="@+id/DateDriver"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <Button
+                    android:text="Confirm Selection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Confirm"
+                    android:textColor="@color/iconblue"
+                    android:textAllCaps="false"
+                    android:backgroundTint="@color/white"
+                    android:layout_above="@+id/DateDriver"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <CheckBox
+                android:text="08:00 to 09:00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/B8to9"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/iconblue"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                android:buttonTint="@color/iconblue" />
+
+            <CheckBox
+                android:text="09:00 to 10:00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/B9to10"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/iconblue"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                android:buttonTint="@color/iconblue" />
+
+            <CheckBox
+                android:text="10:00 to 11:00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/B10to11"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/iconblue"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                android:buttonTint="@color/iconblue" />
+
+            <CheckBox
+                android:text="11:00 to 12:00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/B11to12"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/iconblue"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                android:buttonTint="@color/iconblue" />
+
+            <CheckBox
+                android:text="12:00 to 13:00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/B12to13"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/iconblue"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                android:buttonTint="@color/iconblue" />
+
+            <CheckBox
+                android:text="13:00 to 14:00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/B13to14"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/iconblue"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                android:buttonTint="@color/iconblue" />
+
+            <CheckBox
+                android:text="14:00 to 15:00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/B14to15"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/iconblue"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                android:buttonTint="@color/iconblue" />
+
+            <CheckBox
+                android:text="15:00 to 16:00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/B15to16"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/iconblue"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                android:buttonTint="@color/iconblue" />
+
+            <CheckBox
+                android:text="16:00 to 17:00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/B16to17"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/iconblue"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                android:buttonTint="@color/iconblue" />
+
+            <CheckBox
+                android:text="17:00 to 18:00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/B17to18"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/iconblue"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                android:buttonTint="@color/iconblue" />
+
+            <Button
+                android:text="Make Booking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Booking"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/iconblue"
+                android:layout_above="@+id/Previous"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
